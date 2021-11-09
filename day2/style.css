@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    background: url("coverphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.nav{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(61, 93, 236);
+}
+.logo{
+    width: 60px;
+    height: auto;
+    margin: 10px;
+    
+} 
+.nav ul{
+    float: right;
+    margin: 20px;
+
+}
+.nav ul li{
+    display: inline-block;
+    padding: 15px 18px;
+    color:black;
+    list-style: none;
+    font-size: 25px;
+    transition: .4s;
+}
+.nav ul li:hover{
+    background-color: rgb(53, 22, 22);
+    border-radius: 9px;
+}
+.hero-text{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: wheat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    
+}
+.hero-text,h1{
+    font-size: 50px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
