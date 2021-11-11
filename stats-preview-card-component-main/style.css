@@ -8,12 +8,12 @@ body{
 
 
 .cotainer_card{
-    width: 800px;
-    height: 300px;
+    width: 900px;
+    height: 350px;
     border-radius: 10px;
  position: absolute;
  top: 20%;
- left: 15%;
+ left: 25%;
 background-color: rgba(49, 29, 70, 0.801);
 
 }
