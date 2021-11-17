@@ -1,0 +1,29 @@
+*{padding: 0; margin: 0;}
+
+#boyd-header{
+    height: 60vh;
+background-image: url(apple.jpeg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+.horizontal_list{
+    list-style: none;
+    padding-top: 10px;
+    text-align: center;
+
+}
+.horizontal_list li{
+    display: inline-block;
+    color: aliceblue;
+    margin: 0px 8px 8px 0px;
+    font-size: 2rem;
+
+}
+.horizontal_list li a{
+    text-decoration: none;
+    padding: 12px 8px;
+    
+    
+}
+}
