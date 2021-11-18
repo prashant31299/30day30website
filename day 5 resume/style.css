@@ -40,7 +40,6 @@ background-attachment: fixed;
 }
 .name_socil-container{
   
-    color: white;
     padding: 15px;
     position: absolute;
     top: 30%;
@@ -50,3 +49,55 @@ background-attachment: fixed;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
+.text-center{
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.social_icon {
+    padding: 10px;
+
+}
+.social_icon ul{
+    list-style: none;
+
+}
+.social_icon ul li{
+    display: inline-block;
+    color: aliceblue;
+    margin-top: 20%;
+    padding-left: 10%;
+}
+
+#about{
+    height: auto;
+    
+    width:100%;
+    position: relative;
+}
+#my_image{
+    height: 20rem;
+    width: 20rem;
+    margin: auto;
+    margin-top: -15vh
+}
+#my_image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+    box-shadow: 1px 1px 10px 2px lightgrey;    border-collapse: collapse;
+}
+
+#about p{
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+    color: grey;
+    align-items: ;
+    line-height: 28px;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+
+    margin: auto;
+}   
