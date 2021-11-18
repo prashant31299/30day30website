@@ -2,7 +2,8 @@
 
 #boyd-header{
     height: 60vh;
-background-image: url(apple.jpeg);
+background-image: url(gun.jpg);
+opacity: 0.9;
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
@@ -11,19 +12,41 @@ background-attachment: fixed;
     list-style: none;
     padding-top: 10px;
     text-align: center;
+    list-style: none;
+
 
 }
 .horizontal_list li{
     display: inline-block;
-    color: aliceblue;
     margin: 0px 8px 8px 0px;
+    font-weight: 900;
     font-size: 2rem;
+    padding: 12px 8px;
+    
 
 }
 .horizontal_list li a{
     text-decoration: none;
-    padding: 12px 8px;
-    
+    color: rgb(253, 253, 253);
+    font-family: 'Courier New', Courier, monospace;
+  
+
     
 }
+.horizontal_list li a:hover{
+    background-color: rgb(12, 11, 11);
+    border: 1px solid wheat;
+    border-radius: 8px;
+}
+.name_socil-container{
+  
+    color: white;
+    padding: 15px;
+    position: absolute;
+    top: 30%;
+    font-size: 2.5rem;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
