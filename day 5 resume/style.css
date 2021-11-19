@@ -88,7 +88,20 @@ background-attachment: fixed;
 
     box-shadow: 1px 1px 10px 2px lightgrey;    border-collapse: collapse;
 }
+/* section */
+section{
+    display: flex;
+    flex-direction: column;
+    
 
+}
+/*  */
+section:nth-child(2n){
+    background-color: rgb(161, 150, 150);
+}
+section:nth-child(2n+1){
+    background-color: rgb(255, 255, 255);
+}
 #about p{
     padding: 10px;
     width: 70%;
@@ -100,4 +113,22 @@ background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
 
     margin: auto;
-}   
+}
+
+#skill{
+    width: 100%;
+    height: auto;
+    background-color: rgb(141, 127, 127);
+}
+.skill-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.skill-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
