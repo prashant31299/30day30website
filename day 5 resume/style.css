@@ -90,24 +90,25 @@ background-attachment: fixed;
 }
 /* section */
 section{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 
 }
 /*  */
 section:nth-child(2n){
-    background-color: rgb(161, 150, 150);
+    background-color: rgb(218, 214, 214);
 }
 section:nth-child(2n+1){
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(245, 245, 245);
 }
 #about p{
     padding: 10px;
     width: 70%;
     text-align: center;
     color: grey;
-    align-items: ;
     line-height: 28px;
     font-size: 1.1rem;
     font-family: 'Courier New', Courier, monospace;
@@ -118,17 +119,57 @@ section:nth-child(2n+1){
 #skill{
     width: 100%;
     height: auto;
-    background-color: rgb(141, 127, 127);
+    
 }
 .skill-heading{
     width: auto;
     padding: 20px 10px 10px;
     font-weight: 400;
+
 }
 .skill-heading span{
     font-size: 40px;
     color: #2857a4;
     display: inline-block;
     padding-top: 10px;
-    margin-right: 0.5rem;
+    margin-right: 0.5rem
+
+}
+.skill-display{
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+}
+.container{
+    flex-flow: column wrap;
+
+    width: 7rem;
+    height: 1.4rem;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    
+}
+.container >div{
+    row-gap: 10px;
+    column-gap: 20px;
+        border-radius: 20px 0px 0px 20px;
+        
+
+}
+.skill-name span{
+    color: wheat;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+.mb-blue{
+    background-color: rgb(58, 60, 111);
+}
+/* percentage class */
+.eight-five{
+    width: 85%;
+    height: inherit;
+}
+.mb75px{
+    margin-bottom: 75px;
 }
