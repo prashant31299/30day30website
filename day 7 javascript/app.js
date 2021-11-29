@@ -12,11 +12,19 @@ console.log(x+y);
 
 let name="prashant"
 let n=90
-console.log(name + n);
 
 
-const a=20 
-console.log(a);
+
+//const a=20 
+//console.log(a);
 // using cost we cannot change the value
-a=30
-console.log(a);
+//a=30
+//console.log(a);// throw type error
+
+
+// data type
+let a="strings"
+let b= 12 // number
+let c= true
+let d=null
+let e   //undifined
