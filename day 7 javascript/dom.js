@@ -19,3 +19,19 @@ document.querySelector("h1").style.color="red";
 function changetext(id){
     id.innerHTML="oops!"
 }
+
+function upper(){
+    x=document.getElementById("fname")
+    x.value=x.value.toUpperCase()
+}
+
+function mover(obh){
+    obh.style.backgroundColor="#D94A38";
+
+    obh.innerHTML="over "
+}
+function mout(obh){
+    obh.style.backgroundColor = "#1ec5e5";
+
+    obh.innerHTML="out"
+}
