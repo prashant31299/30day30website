@@ -1,0 +1,67 @@
+html {
+    background: hsl(204, 99%, 47%) url(https://unsplash.it/1500/1000?image=881&blur=5);
+    align-items: center;
+
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2px;
+    box-shadow:
+        0 0 0 4px rgba(0, 0, 0, 0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hours {
+    width: 50%;
+    height: 6px;
+    position: absolute;
+    background: #000;
+    top: 50%;
+    transform: rotate(250deg);
+    transform-origin: 100%;
+    transition: 0.05s;
+    transition-timing-function: cubic-bezier(0.1 2.7 0.8 1);
+}
+
+.min {
+    width: 50%;
+    height: 6px;
+    position: absolute;
+    background: #000;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
+
+.sec {
+    width: 50%;
+    height: 6px;
+    position: absolute;
+    background: #000; 
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
