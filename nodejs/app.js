@@ -1,3 +1,4 @@
-const fs =require("fs");
-
-fs.copyFileSync("1.txt","2.txt")
+console.log(__dirname);
+setInterval(() => {
+    console.log("hallow");
+}, 1000);
