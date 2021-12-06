@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable update</title>
+</head>
+<body>
+    
+    <div class="control">
+        <h1>update css variable with  <span>js</span></h1>
+        <label for="spacing">spacing:</label>
+        <input type="range"  name="spacing " min="10" max="200" value="10" data-sizing="px">
+
+        <label for="blur">blur:</label>
+        <input type="range"  name="blur " min="10" max="25" value="10" data-sizing="px">
+
+        <label for="base">base color</label>
+        <input type="color" name="color" value="#fff">
+
+    </div>
+    <img src="https://www.hotelnewsme.com/wp-content/uploads/2016/12/shutterstock_528764896.jpg" alt="">
+
+    <style>
+        :root{
+            --base:#050505;
+            --spacing:10px;
+            --blur:10px;
+        }
+        img{
+            padding:var(--spacing);
+            background: var(--base);
+            filter:blur(var(--blur))
+        }
+        span{
+            color: var(--base);
+        }
+        body{
+            text-align: center;
+        }
+        body{
+                background: rgb(11, 46, 66);
+                font-size: 2rem;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-transform: uppercase;
+                color: aliceblue;
+        }
+        input{width: 100px;}
+    </style>
+
+
+<script>
+    const input = document.querySelectorAll(".control input")
+
+    function handleupdate(){
+        const suffex =this.dataset.sizing || '';
+        document.documentElement.style.setProperty(`--${this.name}`,this.value+suffex)
+        console.log(suffex);
+    }
+    input.forEach(input => input.addEventListener('change',handleupdate))
+    input.forEach(input => input.addEventListener('mousemove',handleupdate))
+
+</script>
+</body>
+</html>
