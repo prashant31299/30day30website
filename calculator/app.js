@@ -13,6 +13,18 @@ app.post("/",(req,res)=>{
     res.send("your calulation is " + result )
 })
 
+app.get("/bmi_cal",(req,res)=>{
+    res.sendFile(__dirname+"/bmi_cal.html")
+})
+
+app.post("/bmi_cal",(req,res)=>{
+    let weight = Number(req.body.num1)
+    let height = Number(req.body.num2)
+    result =weight/(height*height)
+    res.send(" your bmi is"+result)
+
+})
+
 app.listen(3000,()=>{
     console.log("server start  ar port: 3000" );
 })
