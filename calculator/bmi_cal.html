@@ -9,9 +9,9 @@
 <body>
     <h1>calculate your bmi </h1>
     <form action="/bmi_cal" method="POST">
-    <input type="number" value="num1" placeholder=" enter weight">
-    <input type="number" value="num2" placeholder="enter height">
-    <button type="submit">submit</button>
+        <input type="number" step="any" name="weight" placeholder="enter 1st ">
+        <input type="number" step="any" name="height" placeholder="enter 2nd ">
+    <button type="submit">calculate</button>
     </form>
     
     <style>
@@ -21,7 +21,8 @@
             /* height: 500px; */
             justify-content: center;
             padding: 10%;
-            border: 2px solid black;
+           border: 2px solid black;
+           background-color: rgb(180, 231, 176);
         }
         input{
             font-size: 1rem;

@@ -18,10 +18,16 @@ app.get("/bmi_cal",(req,res)=>{
 })
 
 app.post("/bmi_cal",(req,res)=>{
-    let weight = Number(req.body.num1)
-    let height = Number(req.body.num2)
-    result =weight/(height*height)
-    res.send(" your bmi is"+result)
+    let weight = parseFloat(req.body.weight)
+    let height = parseFloat(req.body.height)
+
+    let bmi = (weight / ((height * height) 
+    / 10000)).toFixed(2)
+
+
+    // let bmi =weight / (height * height);
+
+    res.send(" your bmi is"+ bmi)
 
 })
 
