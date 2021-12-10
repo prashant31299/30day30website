@@ -1,22 +1,34 @@
-let express =require("express")
-let app=express()
 
-app.get("/",(req,res)=>{
-  
-    var today = new Date()
-    var currentdat =today.getDay()
-    var day =""
-    if (currentdat == 6 || currentdat ==0){
-        day ="weakend"
-        console.log(day);
+let express = require("express")
+let bodyparser = require("body-parser")
+let app = express()
+app.set('view engine', 'ejs');
 
-    }else{
-        day ="weeday let work"
-        console.log(day);
-    }
 
-    res.render("index",{day:day})
+  var items=["5451",];
+app.use(bodyparser.urlencoded({extended:true}))
+
+app.get("/", (req, res) => {
+
+
+    var options = { 
+        weekday: 'long', 
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric' };
+    var d = new Date();
+    let day = d.toLocaleDateString("en-US", options)
+
+    res.render("index", {
+        day: day,newlistiteam:items })
 })
-app.listen(3000,()=>{
+
+app.post("/",(req,res)=>{
+   let item= req.body.newitem;
+    items.push(item) 
+    res.redirect("/"); // we redirect this post request to get and and new list in our 
+})
+ 
+app.listen(3000, () => {
     console.log("server start at 3000");
 })
